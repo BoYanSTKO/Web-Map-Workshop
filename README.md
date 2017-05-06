@@ -3,6 +3,4 @@
 ## Credits
 [Bo Yan](https://github.com/BoYanSTKO "Bo Yan")
 
-Intern at ESRI Applications Prototype Lab
-
-Contact: byan@esri.com | boyan@umail.ucsb.edu
+PhD student in [STKO Lab](http://stko.geog.ucsb.edu "STKO") in the [Department of Geography](http://geog.ucsb.edu "geog") at [UC Santa Barbara](http://www.ucsb.edu/ "UCSB")
