@@ -88,6 +88,16 @@ The data we have is in shapefile format ([here](data "data")) and it has populat
 ```
 0-20, 20-50, 50-100, 100-200, 200-500, 500-1000, 1000+
 ```
+Let's use the [ColorBrewer](http://colorbrewer2.org/ "colorbrewer") to decide our color scheme for the classification. Since it's quantitative data, we can use `sequential` or `diverging` schemes. Here I use 7-class `diverging` schemes.
+```
+0-20, #3288bd
+20-50, #99d594
+50-100, #e6f598
+100-200, #ffffbf
+200-500, #fee08b
+500-1000, #fc8d59
+1000+, #d53e4f
+```
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
 ## Credits
