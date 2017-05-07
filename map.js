@@ -1,12 +1,12 @@
 // create map object, "mapid" is the element in the html file
-var map = L.map('mapid');
+var map = L.map("mapid");
 
 // create a leaflet layer object, in this case, a tile layer
 // we use the tile service provided by Mapzen and use
 // Tangram to render the maps
-var layerBubbleStyle = Tangram.leafletLayer({
-    scene: "scene"
-    attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | &copy; OSM contributors | <a href="https://mapzen.com/" target="_blank">Mapzen</a>'
+var layer = Tangram.leafletLayer({
+    scene: "https://mapzen.com/carto/bubble-wrap-style/bubble-wrap-style.zip",
+    attribution: "<a href='https://mapzen.com/tangram' target='_blank'>Tangram</a> | &copy; OSM contributors | <a href='https://mapzen.com/' target='_blank'>Mapzen</a>"
 });
 
 // add layer to the map
@@ -32,7 +32,7 @@ scene.subscribe({
 var URL_PATTERN = /((https?:)?\/\/(vector|tile).mapzen.com([a-z]|[A-Z]|[0-9]|\/|\{|\}|\.|\||:)+(topojson|geojson|mvt|png|tif|gz))/;
 
 function isValidMapzenApiKey(string) {
-  return (typeof string === 'string' && string.match(/[-a-z]+-[0-9a-zA-Z_-]{7}/));
+    return (typeof string === "string" && string.match(/[-a-z]+-[0-9a-zA-Z_-]{7}/));
 }
 
 function injectAPIKey(config, apiKey) {
@@ -54,7 +54,7 @@ function injectAPIKey(config, apiKey) {
         if (value.url_params && value.url_params.api_key &&
             isValidMapzenApiKey(value.url_params.api_key)) {
             valid = true;
-        // Next, check if there is an api_key param in the query string
+            // Next, check if there is an api_key param in the query string
         } else if (value.url.match(/(\?|&)api_key=[-a-z]+-[0-9a-zA-Z_-]{7}/)) {
             valid = true;
         }
@@ -67,8 +67,8 @@ function injectAPIKey(config, apiKey) {
 
             // turn off overlays for walkabout
             var params2 = Object.assign({}, config.global, {
-                sdk_bike_overlay : false,
-                sdk_path_overlay : false
+                sdk_bike_overlay: false,
+                sdk_path_overlay: false
             });
 
             // Mutate the original on purpose.
