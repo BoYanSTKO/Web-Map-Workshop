@@ -183,4 +183,4 @@ legend.onAdd = function (map) {
 Voilà! We just made our first interactive choropleth map! You can customize the visualizations if you want.
 ![ChoroplethMap](img/choroplethmap.png "ChoroplethMap")
 ## Attribution
-Some material in this tutorial is adapted from [Leaflet tutorial](http://leafletjs.com/examples.html "leaflet tutorial") and [Tangram repo](https://github.com/tangrams/tangram "tangram"). The data is based on the shape provided by [Mike Bostock](https://bost.ocks.org/mike/ "Mike") and population statistics provided by [US Census Bureau](http://www.census.gov/ "US Census Bureau").
+Most material in this tutorial is adapted from [Leaflet tutorial](http://leafletjs.com/examples.html "leaflet tutorial") and [Tangram repo](https://github.com/tangrams/tangram "tangram"). The data is based on the shape provided by [Mike Bostock](https://bost.ocks.org/mike/ "Mike") and population statistics provided by [US Census Bureau](http://www.census.gov/ "US Census Bureau").
