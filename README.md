@@ -2,7 +2,7 @@
 ## Preliminary
 Since we are only dealing with client side in this case, we will need to prepare our HTML page, CSS and JavaScript code. HTML, which stands for Hypertext Markup Language, is a standard markup language for creating webpages which show texts, forms, images and some interactive elements. JavaScript is a scripting language which is usually used in addition to HTML to change the behavior and content of the webpages. CSS is used to define the style and layout of the webpages.
 ## Basemap
-### Setting up
+### Setting Up
 First, let's create a default HTML page to show our webmap. Create an empty file using your favorate text editor and name it "index.html". You can copy the content below into your "index.html" or you can download the file [here](basemap/index.html "index.html").
 ```html
 <!DOCTYPE html>
@@ -60,7 +60,7 @@ defines the styles for this html page. The map content will be displayed on the 
 </body>
 ```
 tells the page that "mapid" is the id for the map content and the html page will look for the "map.js" javascript file. This is the file that we will be editing to do all the web mapping magic.
-### Choosing basemap
+### Choosing Basemap
 You can download the simplistic example JavaScript file [here](basemap/map.js "example"). Notice that you will need to use your own API key from [Mapzen](https://mapzen.com/dashboard "API key"). You will also need to choose a [basemap style](https://mapzen.com/documentation/cartography/styles/ "styles") and change the value for `scene` like:
 ```javascript
 var layerBubbleStyle = Tangram.leafletLayer({
@@ -75,15 +75,15 @@ map.setView([34.4140, -119.8489], 16);
 Now you should be able to see your web map.
 ![Basemap](img/basemap.png "Basemap")
 Try to play around with different basemap styles, set map to different default view location and zoom level.
-## Choropleth map
-### Setting up
+## Choropleth Map
+### Setting Up
 Let's first download the template HTML ([here](ChoroplethMap/index.html "index.html")) and JavaScript file ([here](ChoroplethMap/map.js "javascript")). Notice that the HTML file has two more lines:
 ```html
 .info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
 .legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
 ```
 These are the styles we define for the `info` and `legend` of our choropleth map.
-### Data processing & classification
+### Data Processing & Classification
 The data we have is in shapefile format ([here](data "data")) and it has population density information for each state in US. In order to make a choropleth map for the population density, we need to classify the values into several groups. You can use any tools (QGIS, ArcGIS, etc.) to do it. For example, the values could be classified into 7 groups:
 ```
 0-20, 20-50, 50-100, 100-200, 200-500, 500-1000, 1000+
@@ -117,6 +117,21 @@ Then we can rename the file into `population.js`. Just like before, we need to l
 ```html
 <script type="text/javascript" src="population.js"></script>
 ```
+### Interactive Choropleth Map
+Now let's modify the JavaScript fle to make an interactive choropleth map. We need to tell the script our color schemes. This is done using the `getColor(d)` function.
+```javascript
+function getColor(d) {
+  return d > 1000 ? "#800026" :
+         d > 500  ? "#BD0026" :
+         d > 200  ? "#E31A1C" :
+         d > 100  ? "#FC4E2A" :
+         d > 50   ? "#FD8D3C" :
+         d > 20   ? "#FEB24C" :
+         d > 10   ? "#FED976" :
+                    "#FFEDA0";
+}
+```
+This nested `if else` clause simply tells the script what color to use for different values.
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
 ## Credits
