@@ -1,15 +1,18 @@
+// create map object, "mapid" is the element in the html file
 var map = L.map('mapid');
 
+// create a leaflet layer object, in this case, a tile layer
+// we use the tile service provided by Mapzen and use
+// Tangram to render the maps
 var layer = Tangram.leafletLayer({
-    scene: "https://mapzen.com/carto/bubble-wrap-style/bubble-wrap-style.zip",
+    scene: "scene"
     attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | &copy; OSM contributors | <a href="https://mapzen.com/" target="_blank">Mapzen</a>'
 });
 
 layer.addTo(map);
-map.setView([34.4140, -119.8489], 16)
 
 var scene = layer.scene;
-var api_key = "mapzen-PvCT6iP";
+var api_key = "your api key";
 
 // ensure there's an api key
 scene.subscribe({
