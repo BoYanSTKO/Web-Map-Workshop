@@ -71,7 +71,8 @@ Let's also set the map view to UCSB and set the zoom level to 16:
 ```javascrip
 map.setView([34.4140, -119.8489], 16);
 ```
-
+Now you should be able to see your web map.
+![Alt](img/basemap.png "Basemap")
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
 ## Credits
