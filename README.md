@@ -1,4 +1,4 @@
-# Web Mapping Tutorial
+# Web Map Tutorial
 ## Preliminary
 Since we are only dealing with client side in this case, we will need to prepare our HTML page, CSS and JavaScript code. HTML, which stands for Hypertext Markup Language, is a standard markup language for creating webpages which show texts, forms, images and some interactive elements. JavaScript is a scripting language which is usually used in addition to HTML to change the behavior and content of the webpages. CSS is used to define the style and layout of the webpages.
 ### Setting up
@@ -40,7 +40,7 @@ tells the page to include the Leaflet JavaScript file so that we can use the met
 ```html
 <script src="https://mapzen.com/tangram/tangram.min.js"></script>
 ```
-tells the page to include [Tangram](https://mapzen.com/documentation/tangram/ "Tangram") JavaScript API. This API differs from the Leaflet API in that this API will render 2D or 3D maps from vector files.
+tells the page to include [Tangram](https://mapzen.com/documentation/tangram/ "Tangram") JavaScript API. This API differs from the Leaflet API in that it will render 2D or 3D maps from vector files. It can also access various predefined [basemap styles](https://mapzen.com/documentation/cartography/styles/ "styles") provided by [Mapzen](https://mapzen.com/ "Mapzen"). You will also be able to [customize your map styles](https://mapzen.com/documentation/tangram/walkthrough/ "Tangram") and use the customized style as your basemap.
 ```html
 <style>
   #mapid {
