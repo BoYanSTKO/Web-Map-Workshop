@@ -75,7 +75,11 @@ Now you should be able to see your web map.
 ![Basemap](img/basemap.png "Basemap")
 Try to play around with different basemap styles, set map to different default view location and zoom level.
 ## Choropleth map
-Let's first download the template HTML ([here](ChoroplethMap/index.html "index.html")) and JavaScript file ([here](ChoroplethMap/map.js "javascript")).
+Let's first download the template HTML ([here](ChoroplethMap/index.html "index.html")) and JavaScript file ([here](ChoroplethMap/map.js "javascript")). Notice that the HTML file has two more lines:
+```html
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+```
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
 ## Credits
