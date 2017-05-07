@@ -4,7 +4,7 @@ var map = L.map('mapid');
 // create a leaflet layer object, in this case, a tile layer
 // we use the tile service provided by Mapzen and use
 // Tangram to render the maps
-var layer = Tangram.leafletLayer({
+var layerBubbleStyle = Tangram.leafletLayer({
     scene: "scene"
     attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | &copy; OSM contributors | <a href="https://mapzen.com/" target="_blank">Mapzen</a>'
 });
