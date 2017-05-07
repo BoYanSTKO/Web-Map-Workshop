@@ -13,7 +13,7 @@ var layer = Tangram.leafletLayer({
 layer.addTo(map);
 
 // set map view and zoom
-map.setView([37.8, -96], 4);
+map.setView([34.4140, -119.8489], 16);
 
 var scene = layer.scene;
 var api_key = "mapzen-PvCT6iP";
