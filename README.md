@@ -84,7 +84,10 @@ Let's first download the template HTML ([here](ChoroplethMap/index.html "index.h
 ```
 These are the styles we define for the `info` and `legend` of our choropleth map.
 ### Data processing & classification
-The data we have is in shapefile format ([here](data "data"))
+The data we have is in shapefile format ([here](data "data")) and it has population density information for each state in US. In order to make a choropleth map for the population density, we need to classify the values into several groups. You can use any tools (QGIS, ArcGIS, etc.) to do it. For example, the values could be classified into 7 groups:
+```
+0-20, 20-50, 50-100, 100-200, 200-500, 500-1000, 1000+
+```
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
 ## Credits
