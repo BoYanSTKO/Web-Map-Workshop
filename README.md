@@ -40,7 +40,7 @@ tells the page to include the Leaflet JavaScript file so that we can use the met
 ```html
 <script src="https://mapzen.com/tangram/tangram.min.js"></script>
 ```
-tells the page to include [Tangram](https://mapzen.com/documentation/tangram/ "Tangram") JavaScript API. This API differs from the Leaflet API in that it will render 2D or 3D maps from vector files. It can also access various predefined [basemap styles](https://mapzen.com/documentation/cartography/styles/ "styles") provided by [Mapzen](https://mapzen.com/ "Mapzen"). You will also be able to [customize your map styles](https://mapzen.com/documentation/tangram/walkthrough/ "Tangram") and use the customized style as your basemap.
+tells the page to include [Tangram](https://mapzen.com/documentation/tangram/ "Tangram") JavaScript API. This API differs from the Leaflet API in that it will render 2D or 3D maps from vector files. It can also access various predefined [basemap styles](https://mapzen.com/documentation/cartography/styles/ "styles") provided by [Mapzen](https://mapzen.com/ "Mapzen"). You will also be able to [customize your map styles](https://mapzen.com/documentation/tangram/walkthrough/ "Tangram") and use the customized basemap.
 ```html
 <style>
   #mapid {
@@ -59,6 +59,8 @@ defines the styles for this html page. The map content will be displayed on the 
 </body>
 ```
 tells the page that "mapid" is the id for the map content and the html page will look for the "map.js" javascript file. This is the file that we will be editing to do all the web mapping magic.
+### Choosing basemap
+
 
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
