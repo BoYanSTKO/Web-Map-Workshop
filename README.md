@@ -27,7 +27,7 @@ First, let's create a default HTML page to show our webmap. Create an empty file
   </body>
 </html>
 ```
-
+There are a lot of information in this code. 
 
 ## About
 This is a brief tutorial for web mapping using [Leaflet](http://leafletjs.com/ "Leaflet") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
