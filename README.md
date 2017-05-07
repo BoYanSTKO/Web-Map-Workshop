@@ -62,7 +62,7 @@ defines the styles for this html page. The map content will be displayed on the 
 ```
 tells the page that "mapid" is the id for the map content and the html page will look for the "map.js" javascript file. This is the file that we will be editing to do all the web mapping magic.
 ### Choosing Basemap
-You can download the simplistic example JavaScript file [here](basemap/map.js "example"). Notice that you will need to use your own API key from [Mapzen](https://mapzen.com/dashboard "API key"). You will also need to choose a [basemap style](https://mapzen.com/documentation/cartography/styles/ "styles") and change the value for `scene` like:
+You can download the simplistic example JavaScript file [here](Basemap/map.js "example"). Notice that you will need to use your own API key from [Mapzen](https://mapzen.com/dashboard "API key"). You will also need to choose a [basemap style](https://mapzen.com/documentation/cartography/styles/ "styles") and change the value for `scene` like:
 ```javascript
 var layerBubbleStyle = Tangram.leafletLayer({
     scene: "https://mapzen.com/carto/tron-style/tron-style.zip",
