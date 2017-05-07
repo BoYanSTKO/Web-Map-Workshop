@@ -2,7 +2,7 @@
 ## Preliminary
 Since we are only dealing with client side in this case, we will need to prepare our HTML page, CSS and JavaScript code. HTML, which stands for Hypertext Markup Language, is a standard markup language for creating webpages which show texts, forms, images and some interactive elements. JavaScript is a scripting language which is usually used in addition to HTML to change the behavior and content of the webpages. CSS is used to define the style and layout of the webpages.
 ## Setting up
-First, let's create a default HTML page to show our webmap. Create an empty file using your favorate text editor and name it "index.html". You can copy the content below into your "index.html" or you can download the file [here](index.html "index.html").
+First, let's create a default HTML page to show our webmap. Create an empty file using your favorate text editor and name it "index.html". You can copy the content below into your "index.html" or you can download the file [here](basemap/index.html "index.html").
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -60,10 +60,10 @@ defines the styles for this html page. The map content will be displayed on the 
 ```
 tells the page that "mapid" is the id for the map content and the html page will look for the "map.js" javascript file. This is the file that we will be editing to do all the web mapping magic.
 ## Choosing basemap
-You can download the simplistic example JavaScript file [here](map.js "example"). Notice that you will need to use your own API key from [Mapzen](https://mapzen.com/dashboard "API key"). You will also need to choose a [basemap style](https://mapzen.com/documentation/cartography/styles/ "styles") and change the value for `scene` like:
+You can download the simplistic example JavaScript file [here](basemap/map.js "example"). Notice that you will need to use your own API key from [Mapzen](https://mapzen.com/dashboard "API key"). You will also need to choose a [basemap style](https://mapzen.com/documentation/cartography/styles/ "styles") and change the value for `scene` like:
 ```javascript
-var layer = Tangram.leafletLayer({
-    scene: "https://mapzen.com/carto/bubble-wrap-style/bubble-wrap-style.zip",
+var layerBubbleStyle = Tangram.leafletLayer({
+    scene: "https://mapzen.com/carto/tron-style/tron-style.zip",
     attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | &copy; OSM contributors | <a href="https://mapzen.com/" target="_blank">Mapzen</a>'
 });
 ```
@@ -73,6 +73,9 @@ map.setView([34.4140, -119.8489], 16);
 ```
 Now you should be able to see your web map.
 ![Basemap](img/basemap.png "Basemap")
+Try to play around with different basemap styles, set map to different default view location and zoom level.
+## Layer Control
+
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
 ## Credits
