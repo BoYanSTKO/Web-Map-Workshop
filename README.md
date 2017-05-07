@@ -74,7 +74,7 @@ map.setView([34.4140, -119.8489], 16);
 Now you should be able to see your web map.
 ![Basemap](img/basemap.png "Basemap")
 Try to play around with different basemap styles, set map to different default view location and zoom level.
-## Layer Control
+## Choropleth map
 
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
