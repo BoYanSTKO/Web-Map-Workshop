@@ -132,6 +132,53 @@ function getColor(d) {
 }
 ```
 This nested `if else` clause simply tells the script what color to use for different values.
+
+Then we need to apply this style using `style(feature)` function. Recall that the density information is in the `density` field of our shapefile.
+```javascript
+function style(feature) {
+  return {
+    weight: 1,
+    opacity: 1,
+    color: "white",
+    dashArray: "3",
+    fillOpacity: 0.7,
+    fillColor: getColor(feature.properties.density)
+  };
+}
+```
+You can also change other parameters such as `weight`, `opacity` to change the styles for our choropleth map. 
+
+Next, we need to load our data. `L.geoJson` helps us to do it. We just need to make sure that the object name matches the object name in `population.js`.
+```javascript
+geojson = L.geoJson(populationData, {
+  style: style,
+  onEachFeature: onEachFeature
+}).addTo(map);
+```
+As you can see, `style: style,` shows that we apply the styles we previously defined to the `populationData` which is the popultion density data for each state. Each feature is a state, so essentially the `style` we defined previously will be reflected on the state geometry.
+
+Now let's add our `legend`. We need to make sure that our legend matches the classification in the `grades` array.
+```javascript
+legend.onAdd = function (map) {
+
+  var div = L.DomUtil.create("div", "info legend"),
+    grades = [0, 20, 50, 100, 200, 500, 1000],
+    labels = [],
+    from, to;
+
+  for (var i = 0; i < grades.length; i++) {
+    from = grades[i];
+    to = grades[i + 1];
+
+    labels.push(
+      "<i style='background:" + getColor(from + 1) + "'></i> " +
+      from + (to ? "&ndash;" + to : "+"));
+  }
+
+  div.innerHTML = labels.join("<br>");
+  return div;
+};
+```
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
 ## Credits
