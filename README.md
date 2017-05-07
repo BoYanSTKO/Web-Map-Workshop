@@ -10,8 +10,8 @@ First, let's create a default HTML page to show our webmap. Create an empty file
     <title>US Population Density Map</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+    <link rel="stylesheet" href="https://mapzen.com/js/mapzen.css">
+    <script src="https://mapzen.com/js/mapzen.min.js"></script>
     <style>
       #mapid {
         height: 100%;
@@ -29,16 +29,16 @@ First, let's create a default HTML page to show our webmap. Create an empty file
 ```
 There are a lot of information in this code. 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
+<link rel="stylesheet" href="https://mapzen.com/js/mapzen.css">
 ``` 
-tells the page to include the style sheet defined in the Leaflet library so that the map styles and components can be displayed correctly. 
+tells the page to include the style sheet defined in the Mapzen library so that the map styles and components can be displayed correctly. 
 ```html
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+<script src="https://mapzen.com/js/mapzen.min.js"></script>
 ``` 
-tells the page to include the Leaflet JavaScript file so that we can use the methods provided by the library in our JavaScript code.
+tells the page to include the Mapzen JavaScript file so that we can use the methods provided by the library in our JavaScript code.
 
 ## About
-This is a brief tutorial for web mapping using [Leaflet](http://leafletjs.com/ "Leaflet") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
+This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [tutorials](http://leafletjs.com/examples.html "leaflet").
 ## Credits
 [Bo Yan](https://github.com/BoYanSTKO "Bo Yan")
 
