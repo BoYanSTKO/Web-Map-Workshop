@@ -33,14 +33,8 @@ info.addTo(map);
 
 // get color depending on population density value
 function getColor(d) {
-  return d > 1000 ? "#800026" :
-      d > 500  ? "#BD0026" :
-      d > 200  ? "#E31A1C" :
-      d > 100  ? "#FC4E2A" :
-      d > 50   ? "#FD8D3C" :
-      d > 20   ? "#FEB24C" :
-      d > 10   ? "#FED976" :
-            "#FFEDA0";
+  // To do
+  return 
 }
 
 function style(feature) {
@@ -50,7 +44,8 @@ function style(feature) {
     color: "white",
     dashArray: "3",
     fillOpacity: 0.7,
-    fillColor: getColor(feature.properties.density)
+    // To do
+    fillColor: 
   };
 }
 
@@ -58,7 +53,7 @@ function highlightFeature(e) {
   var layer = e.target;
 
   layer.setStyle({
-    weight: 5,
+    weight: 2,
     color: "#666",
     dashArray: '',
     fillOpacity: 0.7
@@ -67,7 +62,7 @@ function highlightFeature(e) {
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
   }
-
+  
   info.update(layer.feature.properties);
 }
 
@@ -90,8 +85,10 @@ function onEachFeature(feature, layer) {
   });
 }
 
-geojson = L.geoJson(statesData, {
-  style: style,
+// To do
+geojson = L.geoJson( , {
+  // To do
+  style: ,
   onEachFeature: onEachFeature
 }).addTo(map);
 
@@ -103,7 +100,8 @@ var legend = L.control({position: "bottomright"});
 legend.onAdd = function (map) {
 
   var div = L.DomUtil.create("div", "info legend"),
-    grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+    // To do
+    grades = [],
     labels = [],
     from, to;
 
