@@ -27,7 +27,15 @@ First, let's create a default HTML page to show our webmap. Create an empty file
   </body>
 </html>
 ```
-There are a lot of information in this code. `<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>` tells the page to include the style sheet defined in the Leaflet library so that the map styles and components can be displayed correctly. `<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>` tells the page to include the Leaflet JavaScript file so that we can use the methods provided by the library in our JavaScript code.
+There are a lot of information in this code. 
+```html
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
+``` 
+tells the page to include the style sheet defined in the Leaflet library so that the map styles and components can be displayed correctly. 
+```html
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+``` 
+tells the page to include the Leaflet JavaScript file so that we can use the methods provided by the library in our JavaScript code.
 
 ## About
 This is a brief tutorial for web mapping using [Leaflet](http://leafletjs.com/ "Leaflet") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
