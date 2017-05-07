@@ -113,7 +113,10 @@ var populationData = {
   }
 }
 ```
-
+Then we can rename the file into `population.js`. Just like before, we need to let the HTML file know where to get the object we just created. We can add one line to replace the `//To do` comment:
+```html
+<script type="text/javascript" src="population.js"></script>
+```
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
 ## Credits
