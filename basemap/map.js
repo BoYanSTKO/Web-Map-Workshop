@@ -5,7 +5,7 @@ var map = L.map("mapid");
 // we use the tile service provided by Mapzen and use
 // Tangram to render the maps
 var layer = Tangram.leafletLayer({
-    scene: "https://mapzen.com/carto/bubble-wrap-style/bubble-wrap-style.zip",
+    scene: scene_url,
     attribution: "<a href='https://mapzen.com/tangram' target='_blank'>Tangram</a> | &copy; OSM contributors | <a href='https://mapzen.com/' target='_blank'>Mapzen</a>"
 });
 
