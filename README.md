@@ -66,7 +66,10 @@ var layer = Tangram.leafletLayer({
     scene: "https://mapzen.com/carto/bubble-wrap-style/bubble-wrap-style.zip",
     attribution: '<a href="https://mapzen.com/tangram" target="_blank">Tangram</a> | &copy; OSM contributors | <a href="https://mapzen.com/" target="_blank">Mapzen</a>'
 });
-
+```
+Let's also set the map view to UCSB and set the zoom level to 16:
+```javascrip
+map.setView([34.4140, -119.8489], 16);
 ```
 
 ## About
