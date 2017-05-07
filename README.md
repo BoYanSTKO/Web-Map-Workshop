@@ -99,7 +99,21 @@ Let's use the [ColorBrewer](http://colorbrewer2.org/ "colorbrewer") to decide ou
 1000+, #d53e4f
 ```
 Now we have our classification and color scheme, we need to load our data on our web map. We know that it works by adding a new layer onto our basemap we just created. An intuitive way to do it is that we can add our shapefile as a layer on the map. This can be done using the `leaflet.shapefile` [plugin](https://github.com/calvinmetcalf/leaflet.shapefile 'leaflet.shapefile'). However, we are going to do it differently. We will use the native support for `geojson` files in Leaflet. `GeoJSON` is a format for encoding geographic data based on `JSON`. It is a very popular data format for many applications including web maps because it's portable and human-readable. There are many tools to convert shapefiles into GeoJSON files. For example in QGIS you can easily save a layer into a GeoJSON file.
-However, Leaflet does not parse GeoJSON files directly, it has to be a JavaScript object.
+
+However, Leaflet does not parse GeoJSON files directly, it has to be a JavaScript object. Although we can use libraries such as [jQuery](https://jquery.com/ "jquery") to read json files, we won't go that far in this tutorial. An easy trick for Leaflet to read our data is to modify our GeoJSON file into a JavaScript file with just one JavaScript object. This can be done by declaring the json string as an object:
+```javascript
+var populationData = {
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": ...
+  },
+  "properties": {
+    "name": ...
+  }
+}
+```
+
 ## About
 This is a brief tutorial for web mapping using [Mapzen](https://mapzen.com/products/maps/ "Mapzen") API presented on May 11th, 2017 during the weekly meeting of the Geography Club at UCSB. The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. It is based on the [Leaflet tutorials](http://leafletjs.com/examples.html "leaflet").
 ## Credits
