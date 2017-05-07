@@ -4,7 +4,7 @@ This is a [brief tutorial](./A_Brief_Introduction_to_Web_Mapping.pdf "presentati
 Since we are only dealing with client side in this case, we will need to prepare our HTML page, CSS and JavaScript code. HTML, which stands for Hypertext Markup Language, is a standard markup language for creating webpages which show texts, forms, images and some interactive elements. JavaScript is a scripting language which is usually used in addition to HTML to change the behavior and content of the webpages. CSS is used to define the style and layout of the webpages.
 ## Basemap
 ### Setting Up
-First, let's create a default HTML page to show our webmap. Create an empty file using your favorate text editor and name it "index.html". You can copy the content below into your "index.html" or you can download the file [here](basemap/index.html "index.html").
+First, let's create a default HTML page to show our webmap. Create an empty file using your favorate text editor and name it "index.html". You can copy the content below into your "index.html" or you can download the file [here](Basemap/index.html "index.html").
 ```html
 <!DOCTYPE html>
 <html lang="en">
