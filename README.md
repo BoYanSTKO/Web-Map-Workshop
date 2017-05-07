@@ -1,5 +1,4 @@
 # Web Map Tutorial
-## About
 This is a [brief tutorial](./A_Brief_Introduction_to_Web_Mapping.pdf "presentation") for web mapping using [Leaflet](http://leafletjs.com/ "Leaflet") and [Tangram](https://mapzen.com/products/tangram/ "Tangram") APIs presented on May 11th, 2017 during the weekly meeting of the [Geography Club at UCSB](https://www.facebook.com/groups/112489222159888 "geography club"). The purpose of this tutorial is to introduce the state-of-the-art web mapping technologies to students who are unfamiliar with web mapping. The tutorial assumes no prior knowledge in coding and programming.
 ## Preliminary
 Since we are only dealing with client side in this case, we will need to prepare our HTML page, CSS and JavaScript code. HTML, which stands for Hypertext Markup Language, is a standard markup language for creating webpages which show texts, forms, images and some interactive elements. JavaScript is a scripting language which is usually used in addition to HTML to change the behavior and content of the webpages. CSS is used to define the style and layout of the webpages.
