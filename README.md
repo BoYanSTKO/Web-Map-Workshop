@@ -1,7 +1,7 @@
 # Web Map Tutorial
 ## Preliminary
 Since we are only dealing with client side in this case, we will need to prepare our HTML page, CSS and JavaScript code. HTML, which stands for Hypertext Markup Language, is a standard markup language for creating webpages which show texts, forms, images and some interactive elements. JavaScript is a scripting language which is usually used in addition to HTML to change the behavior and content of the webpages. CSS is used to define the style and layout of the webpages.
-### Setting up
+## Setting up
 First, let's create a default HTML page to show our webmap. Create an empty file using your favorate text editor and name it "index.html". You can copy the content below into your "index.html" or you can download the file [here](index.html "index.html").
 ```html
 <!DOCTYPE html>
@@ -59,7 +59,7 @@ defines the styles for this html page. The map content will be displayed on the 
 </body>
 ```
 tells the page that "mapid" is the id for the map content and the html page will look for the "map.js" javascript file. This is the file that we will be editing to do all the web mapping magic.
-### Choosing basemap
+## Choosing basemap
 You can download the simplistic example JavaScript file [here](map.js "example"). Notice that you will need to use your own API key from [Mapzen](https://mapzen.com/dashboard "API key"). You will also need to choose a [basemap style](https://mapzen.com/documentation/cartography/styles/ "styles") and change the value for `scene` like:
 ```javascript
 var layer = Tangram.leafletLayer({
