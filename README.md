@@ -122,14 +122,14 @@ Then we can rename the file into `population.js`. Just like before, we need to l
 Now let's modify the JavaScript fle to make an interactive choropleth map. We need to tell the script our color schemes. This is done using the `getColor(d)` function.
 ```javascript
 function getColor(d) {
-  return d > 1000 ? "#800026" :
-         d > 500  ? "#BD0026" :
-         d > 200  ? "#E31A1C" :
-         d > 100  ? "#FC4E2A" :
-         d > 50   ? "#FD8D3C" :
-         d > 20   ? "#FEB24C" :
-         d > 10   ? "#FED976" :
-                    "#FFEDA0";
+  return d > 1000 ? "#d53e4f" :
+         d > 500  ? "#fc8d59" :
+         d > 200  ? "#fee08b" :
+         d > 100  ? "#ffffbf" :
+         d > 50   ? "#e6f598" :
+         d > 20   ? "#99d594" :
+                    "#3288bd";
+                
 }
 ```
 This nested `if else` clause simply tells the script what color to use for different values.
