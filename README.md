@@ -128,8 +128,7 @@ function getColor(d) {
          d > 100  ? "#ffffbf" :
          d > 50   ? "#e6f598" :
          d > 20   ? "#99d594" :
-                    "#3288bd";
-                
+                    "#3288bd";       
 }
 ```
 This nested `if else` clause simply tells the script what color to use for different values.
